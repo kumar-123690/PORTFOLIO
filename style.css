@@ -514,69 +514,65 @@ a {
 }
 
 .pop-box {
-  height: 90%;
-  width: 50%;
-  aspect-ratio: 1/1;
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  max-height: 90vh;
   background-color: var(--bg-white);
-  border-radius: 16px;
+  border-radius: 20px;
   position: fixed;
-  z-index: 10;
+  z-index: 1000;
   border: none;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: 0.3s popover ease;
+  padding: 0;
+  overflow-y: auto;
 }
 
-.formd1 {
-  display: flex;
-  gap: 20px;
+.pop-box::backdrop {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
 }
 
-input {
-  width: 100%;
-  border: 1px solid gray;
-  border-radius: 2px;
-  padding: 8px 3px 8px 10px;
-  margin-top: 10px !important;
+.form-control::placeholder {
+  font-weight: 500;
+  color: var(--text-light-muted);
 }
 
-input::placeholder {
-  font-weight: 600 !important;
-}
-
-#message {
-  height: 100px !important;
-}
-
-#close-contact {
-  margin: 25px !important;
+.form-control:focus {
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
+  border-color: var(--primary);
 }
 
 #close {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
   border: 0;
-  padding: 3px;
+  padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   height: 36px;
   width: 36px;
-  margin: 20px;
   position: absolute;
-  top: 10px;
-  right: 20px;
-  left: auto;
+  top: 15px;
+  right: 15px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-
-  img {
-    height: 20px;
-  }
+  transition: all 0.3s ease;
+  z-index: 1001;
 }
+
+#close img {
+  height: 18px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
 #close:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: rotate(90deg);
 }
 
 footer {
