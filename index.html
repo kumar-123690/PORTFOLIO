@@ -3,398 +3,295 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Prem Kumar - Freelance Web Developer specializing in responsive, user-friendly websites." />
-  <title>Prem Kumar | Portfolio</title>
+  <meta name="description" content="Prem Kumar - Freelance Web Developer building modern, responsive web experiences." />
+  <title>Prem Kumar | Web Developer</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="header">
-    <div class="syelogo"></div>
-    <div class="header_menu" id="header_menu">
+  <!-- ═══════════════ NAVBAR ═══════════════ -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="nav-logo">PK<span class="logo-dot">.</span></a>
+    <div class="nav-menu" id="nav-menu">
       <ul>
-        <li><a href="#home" class="nav-link-item">Home</a></li>
-        <li><a href="#aboutme" class="nav-link-item">About Me</a></li>
-        <li><a href="#services" class="nav-link-item">Services</a></li>
-        <li><a href="#projects" class="nav-link-item">Projects</a></li>
-        <li class="nav-chat-mobile">
-          <a href="#chat" class="btnchat">
-            <button id="lets-chat-btn-mobile">Let's chat</button>
-          </a>
-        </li>
+        <li><a href="#home"     class="nav-link">Home</a></li>
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-cta-mobile"><a href="#" popovertarget="pop-box" class="btn-primary sm">Let's Chat</a></li>
       </ul>
     </div>
-    <div class="header_right">
-      <div class="header_btn">
-        <a href="#chat" class="btnchat">
-          <button id="lets-chat-btn">Let's chat</button>
-        </a>
-      </div>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
+    <div class="nav-right">
+      <a href="#" popovertarget="pop-box" class="btn-primary sm" id="nav-chat-btn">Let's Chat</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section id="home" class="pg1">
-    <div class="pg1left d-flex flex-column justify-content-center px-5">
-      <div class="pg1ltd1">
-        <h2 class="pg1ltd1h2 fw-bold mb-3">Hi! I'm Prem Kumar</h2>
-        <h1 class="pg1ltd1h1">Freelance Web<br />Developer</h1>
-        <p class="mt-3" style="color:var(--text-muted);font-size:1.1rem;line-height:1.7;">
-          &bull; Let's Build the Web the Way You've Always Imagined It.<br />
-          &bull; Crafting seamless, user-friendly web experiences with a focus on design in application.
-        </p>
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">👋 Available for Freelance Work</div>
+      <h1>Hi, I'm <span class="gradient-text">Prem Kumar</span></h1>
+      <h2 class="hero-role">Freelance Web Developer</h2>
+      <p class="hero-desc">Crafting seamless, responsive web experiences with a passion for clean code and modern design. Let's build something amazing together.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#" popovertarget="pop-box" class="btn-outline">Contact Me</a>
       </div>
-      <div class="pg1ltd3 d-flex justify-content-around mt-4">
-        <div class="pg1ltd3d1 txtcen bold">
-          <b style="font-size:2rem;color:var(--primary);">50+</b>
-          <p style="color:var(--text-muted);font-size:0.9rem;">Worldwide Clients</p>
-        </div>
-        <div class="pg1ltd3d1 txtcen bold">
-          <b style="font-size:2rem;color:var(--primary);">7+</b>
-          <p style="color:var(--text-muted);font-size:0.9rem;">Projects Done</p>
-        </div>
-        <div class="pg1ltd3d1 txtcen bold">
-          <b style="font-size:2rem;color:var(--primary);">2+</b>
-          <p style="color:var(--text-muted);font-size:0.9rem;">Years Experience</p>
-        </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">50+</span><span class="stat-label">Clients</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num">7+</span><span class="stat-label">Projects</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Yrs Exp.</span></div>
       </div>
     </div>
-    <div class="pg1right">
-      <div class="pg1rightimg"></div>
+    <div class="hero-image">
+      <div class="hero-img-ring">
+        <div class="hero-photo"></div>
+      </div>
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
     </div>
   </section>
 
-  <!-- ABOUT ME -->
-  <section id="aboutme" class="pg2 container-fluid px-5 pb-5">
-    <div class="pg2d1 d-flex align-items-center m-3 mx-0 bold">
-      <img src="./images/icons8-circle-64.png" alt="" class="star" />&nbsp;About Me...!
-    </div>
-    <div class="pg2d2 m-3 mx-0 bold">Hi! I'm Prem Kumar</div>
-    <div class="pg2d3 m-4 mx-0" style="color:var(--text-muted);max-width:700px;line-height:1.8;">
-      I'm a freelance web developer specializing in creating responsive, user-friendly websites.
-      With a passion for clean code and modern design, I help businesses establish their online presence.
-      Let's bring your vision to life!
-    </div>
-    <div class="pg2d4 d-flex flex-wrap gap-4 m-3 mx-0 mt-4">
-      <div>
-        <p><b>Contact</b></p>
-        <a href="mailto:prem123690@gmail.com" class="email-a">prem123690@gmail.com</a>
-      </div>
-      <div>
-        <p><b>Phone</b></p>
-        <a href="tel:+917671811808" class="phone-a">+91 7671811808</a>
-      </div>
-      <div>
-        <p><b>Spoken Languages</b></p>
-        <p style="color:var(--text-muted);">English &middot; Telugu &middot; Hindi</p>
-      </div>
-      <div>
-        <p><b>Interest</b></p>
-        <p style="color:var(--text-muted);">Music, Chess, Gaming</p>
-      </div>
-      <div>
-        <p><b>Social Media</b></p>
-        <a href="https://www.linkedin.com/in/prem-kumar-b08a7b320/" target="_blank" rel="noopener">
-          <img src="./images/icons8-linkedin-48.png" alt="LinkedIn" class="linkedin" />
-        </a>
-        &nbsp;
-        <a href="https://cssbattle.dev/player/kumar_1729" target="_blank" rel="noopener"
-          style="display:inline-flex;align-items:center;gap:6px;background:#1a1a2e;color:#fff;padding:6px 14px;border-radius:8px;font-weight:600;font-size:0.9rem;">
-          <img src="./images/icons8-github-50.png" alt="" style="height:22px;filter:invert(1);" />
-          CSS Battle
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section id="services" class="pg3 container-fluid px-5 pb-5">
-    <div class="pg3d1 d-flex align-items-center m-3 mx-0">
-      <div class="pg3d1d1 bold">Services</div>
-    </div>
-    <div class="pg3d2 m-3 mx-0 bold">What I Offer</div>
-    <div class="pg3d3 m-3 mx-0">
-      <div class="pg3d3d1">
-        Delivering high-quality solutions across the full stack — from beautiful frontends to robust backends.
-      </div>
-    </div>
-    <div class="pg4 d-flex m-3 mx-0 mt-4">
-      <div class="pg4d1">
-        <img src="./images/icons8-frontend-50.png" alt="Front End" class="imgcard1 mb-3" />
-        <h3 class="bold">Front End</h3>
-        <p class="pg4d1p">
-          Delivering responsive and user-friendly front-end development services, including custom UI/UX design,
-          HTML, CSS, and JavaScript implementation for seamless web experiences.
-        </p>
-      </div>
-      <div class="pg4d2">
-        <img src="./images/icons8-backend-100.png" alt="Back End" class="imgcard2 mb-3" />
-        <h3 class="bold">Back End</h3>
-        <p class="pg4d1p">
-          Offering expert backend development services, including API design, database integration,
-          and server management to build scalable, secure, and high-performance applications.
-        </p>
-      </div>
-      <div class="pg4d3">
-        <img src="./images/icons8-programing-64.png" alt="Programming" class="imgcard3 mb-3" />
-        <h3 class="bold">Programming</h3>
-        <p class="pg4d1p">
-          Providing freelance programming services for custom software solutions, app development,
-          and system integration to meet your unique business needs.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="pg5 container-fluid px-5 pb-5">
-    <div class="pg5d1 d-flex align-items-center m-3 mx-0">
-      <div class="pg2d1 bold">Projects</div>
-    </div>
-    <div class="pg5d2 m-3 mx-0 bold">My Work</div>
-    <div class="pg5d3 m-3 mx-0">
-      <div class="pg5d3d1">
-        A showcase of the projects I've built — from AI-powered platforms to responsive dashboards and CSS battle solutions.
-      </div>
-    </div>
-
-    <!-- Project 1: Appexy Dashboard -->
-    <div class="pg5d4 m-3 mx-0 mt-4">
-      <div class="pg5d4d1">
-        <div class="pg5d4d1d1 mb-2">Appexy Dashboard</div>
-        <div class="m-2 mx-0">
-          <a href="./task14/index.html" class="pg5d4d1d1a bold p-2 mx-0">
-            <img src="./images/icons8-circle-64.png" alt="" class="star" />&nbsp;Live Demo
+  <!-- ═══════════════ ABOUT ═══════════════ -->
+  <section id="about" class="about section">
+    <div class="section-label">About Me</div>
+    <h2 class="section-title">Who I <span class="gradient-text">Am</span></h2>
+    <div class="about-grid">
+      <div class="about-left">
+        <p class="about-intro">I'm a freelance web developer specializing in creating responsive, user-friendly websites. With a passion for clean code and modern design, I help businesses establish their online presence.</p>
+        <div class="about-info-grid">
+          <div class="about-info-item">
+            <span class="ai-label">📧 Email</span>
+            <a href="mailto:prem123690@gmail.com" class="ai-val link">prem123690@gmail.com</a>
+          </div>
+          <div class="about-info-item">
+            <span class="ai-label">📞 Phone</span>
+            <a href="tel:+917671811808" class="ai-val link">+91 7671811808</a>
+          </div>
+          <div class="about-info-item">
+            <span class="ai-label">📍 Location</span>
+            <span class="ai-val">Tirupati, Andhra Pradesh</span>
+          </div>
+          <div class="about-info-item">
+            <span class="ai-label">🗣️ Languages</span>
+            <span class="ai-val">English · Telugu · Hindi</span>
+          </div>
+          <div class="about-info-item">
+            <span class="ai-label">🎮 Interests</span>
+            <span class="ai-val">Music, Chess, Gaming</span>
+          </div>
+        </div>
+        <div class="about-socials">
+          <a href="https://www.linkedin.com/in/prem-kumar-b08a7b320/" target="_blank" rel="noopener" class="social-pill linkedin">
+            <img src="./images/icons8-linkedin-48.png" alt="LinkedIn" /> LinkedIn
+          </a>
+          <a href="https://github.com/middepremkumar" target="_blank" rel="noopener" class="social-pill github">
+            <img src="./images/icons8-github-50.png" alt="GitHub" /> GitHub
+          </a>
+          <a href="https://cssbattle.dev/player/kumar_1729" target="_blank" rel="noopener" class="social-pill css">
+            🏆 CSS Battle
           </a>
         </div>
-        <div class="pg5d4d1d4 m-4 mx-0">
-          <p><b>&bull; Project Duration:</b> 7 days</p>
-          <p><b>&bull; Client:</b> Appexy</p>
-          <p><b>&bull; Role:</b> Front-end Developer</p>
-        </div>
-        <div class="pg5d4d1d2img"></div>
-        <div class="pg5d4d1d3 m-5 mx-0" style="color:var(--text-muted);line-height:1.8;">
-          <p>&bull; Modern &amp; Responsive: Built with Tailwind CSS for a sleek and adaptive design.</p>
-          <p>&bull; Minimalist UI: Clean and well-structured layout for better user experience.</p>
-          <p>&bull; Pre-built Components: Includes ready-to-use widgets, charts, and UI elements.</p>
-          <p>&bull; Dark Mode Support: Seamless switch between light and dark themes.</p>
-          <p>&bull; Highly Customizable: Easy to modify and integrate into various web applications.</p>
+      </div>
+      <div class="about-right">
+        <h3 class="skills-title">Skills & Tech Stack</h3>
+        <div class="skills-grid">
+          <span class="skill">HTML5</span><span class="skill">CSS3</span>
+          <span class="skill">JavaScript</span><span class="skill">Bootstrap</span>
+          <span class="skill">Tailwind CSS</span><span class="skill">Python</span>
+          <span class="skill">Git & GitHub</span><span class="skill">Responsive Design</span>
+          <span class="skill">REST APIs</span><span class="skill">UI/UX Design</span>
+          <span class="skill">Web3Forms</span><span class="skill">Machine Learning</span>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- GitHub Projects Grid -->
-    <div class="gh-section m-3 mx-0 mt-5">
-      <div class="d-flex align-items-center gap-3 mb-4 flex-wrap">
-        <div class="csshed1 bold">GitHub Projects</div>
-        <a href="https://github.com/middepremkumar" target="_blank" rel="noopener" class="gh-profile-link">
-          <img src="./images/icons8-github-50.png" alt="GitHub" style="height:20px;filter:invert(0.4);" />
-          @middepremkumar
+  <!-- ═══════════════ SERVICES ═══════════════ -->
+  <section id="services" class="services section dark-section">
+    <div class="section-label light">What I Do</div>
+    <h2 class="section-title light">Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon-wrap"><img src="./images/icons8-frontend-50.png" alt="Frontend" /></div>
+        <h3>Front End</h3>
+        <p>Responsive, pixel-perfect UI with HTML, CSS, JavaScript and modern frameworks. Clean code, great UX.</p>
+        <div class="service-tags"><span>HTML/CSS</span><span>JavaScript</span><span>Tailwind</span></div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon-wrap"><img src="./images/icons8-backend-100.png" alt="Backend" /></div>
+        <h3>Back End</h3>
+        <p>Scalable backend solutions with API design, database integration and secure server-side management.</p>
+        <div class="service-tags"><span>Python</span><span>REST APIs</span><span>Databases</span></div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon-wrap"><img src="./images/icons8-programing-64.png" alt="Programming" /></div>
+        <h3>Programming</h3>
+        <p>Custom software, automation scripts, and system integrations built to solve real business problems.</p>
+        <div class="service-tags"><span>Python</span><span>Algorithms</span><span>Automation</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PROJECTS ═══════════════ -->
+  <section id="projects" class="projects section">
+    <div class="section-label">My Work</div>
+    <h2 class="section-title">Projects</h2>
+    <p class="section-desc">From AI-powered platforms to responsive dashboards — here's what I've built.</p>
+
+    <!-- Featured Project -->
+    <div class="featured-project">
+      <div class="fp-screenshot"></div>
+      <div class="fp-info">
+        <span class="fp-badge">⭐ Featured Project</span>
+        <h3>Appexy Dashboard</h3>
+        <div class="fp-card">
+          <p>A sleek, modern admin dashboard built for Appexy. Designed with Tailwind CSS for a minimalist, highly responsive UI with dark mode support, pre-built components, and widget integration.</p>
+        </div>
+        <div class="fp-meta">
+          <span>🕐 7 days</span><span>🏢 Appexy</span><span>🎨 Front-end Developer</span>
+        </div>
+        <div class="fp-tech">
+          <span>HTML</span><span>CSS</span><span>Tailwind</span><span>JavaScript</span>
+        </div>
+        <a href="./task14/index.html" class="btn-primary">View Live Demo →</a>
+      </div>
+    </div>
+
+    <!-- GitHub Cards -->
+    <div class="gh-projects-section">
+      <div class="gh-section-header">
+        <h3>More Projects</h3>
+        <a href="https://github.com/middepremkumar" target="_blank" rel="noopener" class="gh-profile-btn">
+          <img src="./images/icons8-github-50.png" alt="" /> @middepremkumar
         </a>
       </div>
-
       <div class="gh-grid">
-
-        <!-- Card 1: Personal Portfolio -->
         <div class="gh-card">
-          <div class="gh-card-top">
-            <div class="gh-card-icon">&#128196;</div>
-            <a href="https://github.com/middepremkumar/Personal-Portfolio" target="_blank" rel="noopener" class="gh-card-title">
-              Personal-Portfolio
-            </a>
-          </div>
-          <p class="gh-card-desc">A modern, fully responsive personal portfolio website built with HTML, CSS &amp; JavaScript. Features a contact form, CSS Battle gallery, and smooth animations.</p>
-          <div class="gh-card-footer">
-            <span class="gh-lang html">&#9679; HTML</span>
-            <a href="https://github.com/middepremkumar/Personal-Portfolio" target="_blank" rel="noopener" class="gh-btn">
-              <img src="./images/icons8-github-50.png" alt="" style="height:16px;" /> View Repo
-            </a>
-          </div>
+          <div class="gh-card-top"><span class="gh-icon">📄</span><a href="https://github.com/middepremkumar/Personal-Portfolio" target="_blank" rel="noopener" class="gh-name">Personal-Portfolio</a><span class="gh-public">Public</span></div>
+          <p class="gh-desc">A modern, fully responsive portfolio with contact form, CSS Battle gallery, and smooth animations. Built with pure HTML, CSS & JavaScript.</p>
+          <div class="gh-footer"><span class="gh-lang html">● HTML</span><a href="https://github.com/middepremkumar/Personal-Portfolio" target="_blank" rel="noopener" class="gh-code-btn"><img src="./images/icons8-github-50.png" alt="" /> Code</a></div>
         </div>
-
-        <!-- Card 2: Smart Agriculture Assistant -->
         <div class="gh-card">
-          <div class="gh-card-top">
-            <div class="gh-card-icon">&#127807;</div>
-            <a href="https://github.com/middepremkumar/Smart-Agriculture-Assistant" target="_blank" rel="noopener" class="gh-card-title">
-              Smart-Agriculture-Assistant
-            </a>
-          </div>
-          <p class="gh-card-desc">An AI-powered AgriSmart platform for farmers with multilingual voice assistant, real-time weather, crop predictions, and automatic GPS-based farm detection.</p>
-          <div class="gh-card-footer">
-            <span class="gh-lang html">&#9679; HTML</span>
-            <a href="https://github.com/middepremkumar/Smart-Agriculture-Assistant" target="_blank" rel="noopener" class="gh-btn">
-              <img src="./images/icons8-github-50.png" alt="" style="height:16px;" /> View Repo
-            </a>
-          </div>
+          <div class="gh-card-top"><span class="gh-icon">🌿</span><a href="https://github.com/middepremkumar/Smart-Agriculture-Assistant" target="_blank" rel="noopener" class="gh-name">Smart-Agriculture-Assistant</a><span class="gh-public">Public</span></div>
+          <p class="gh-desc">AI-powered AgriSmart platform for farmers — multilingual voice assistant, real-time weather, crop predictions, GPS-based farm detection.</p>
+          <div class="gh-footer"><span class="gh-lang html">● HTML</span><a href="https://github.com/middepremkumar/Smart-Agriculture-Assistant" target="_blank" rel="noopener" class="gh-code-btn"><img src="./images/icons8-github-50.png" alt="" /> Code</a></div>
         </div>
-
-        <!-- Card 3: FRS Attendance -->
         <div class="gh-card">
-          <div class="gh-card-top">
-            <div class="gh-card-icon">&#129333;</div>
-            <a href="https://github.com/middepremkumar/frs-attendance" target="_blank" rel="noopener" class="gh-card-title">
-              FRS Attendance
-            </a>
-          </div>
-          <p class="gh-card-desc">A Face Recognition System based automated attendance tracker. Uses computer vision to accurately mark attendance without manual roll calls.</p>
-          <div class="gh-card-footer">
-            <span class="gh-lang html">&#9679; HTML</span>
-            <a href="https://github.com/middepremkumar/frs-attendance" target="_blank" rel="noopener" class="gh-btn">
-              <img src="./images/icons8-github-50.png" alt="" style="height:16px;" /> View Repo
-            </a>
-          </div>
+          <div class="gh-card-top"><span class="gh-icon">🤳</span><a href="https://github.com/middepremkumar/frs-attendance" target="_blank" rel="noopener" class="gh-name">FRS-Attendance</a><span class="gh-public">Public</span></div>
+          <p class="gh-desc">Face Recognition System for automated attendance tracking. Accurately marks attendance using computer vision — no manual roll calls needed.</p>
+          <div class="gh-footer"><span class="gh-lang html">● HTML</span><a href="https://github.com/middepremkumar/frs-attendance" target="_blank" rel="noopener" class="gh-code-btn"><img src="./images/icons8-github-50.png" alt="" /> Code</a></div>
         </div>
-
-        <!-- Card 4: Exam Hall Allocation -->
         <div class="gh-card">
-          <div class="gh-card-top">
-            <div class="gh-card-icon">&#127979;</div>
-            <a href="https://github.com/middepremkumar/ExamHallAllocationSystem" target="_blank" rel="noopener" class="gh-card-title">
-              ExamHall Allocation
-            </a>
-          </div>
-          <p class="gh-card-desc">An automated Exam Hall Allocation System that assigns students to exam halls efficiently, minimizing conflicts and optimizing seat distribution across rooms.</p>
-          <div class="gh-card-footer">
-            <span class="gh-lang python">&#9679; Python</span>
-            <a href="https://github.com/middepremkumar/ExamHallAllocationSystem" target="_blank" rel="noopener" class="gh-btn">
-              <img src="./images/icons8-github-50.png" alt="" style="height:16px;" /> View Repo
-            </a>
-          </div>
+          <div class="gh-card-top"><span class="gh-icon">🏫</span><a href="https://github.com/middepremkumar/ExamHallAllocationSystem" target="_blank" rel="noopener" class="gh-name">ExamHall-Allocation</a><span class="gh-public">Public</span></div>
+          <p class="gh-desc">Automated exam hall allocation system that assigns students efficiently, minimizing conflicts and optimizing seat distribution across rooms.</p>
+          <div class="gh-footer"><span class="gh-lang python">● Python</span><a href="https://github.com/middepremkumar/ExamHallAllocationSystem" target="_blank" rel="noopener" class="gh-code-btn"><img src="./images/icons8-github-50.png" alt="" /> Code</a></div>
         </div>
-
       </div>
     </div>
 
     <!-- CSS Battle Gallery -->
-    <div class="pg5d4d2 mt-5 m-3 mx-0">
-      <div class="csshed1 bold mb-3">CSS Battle Gallery</div>
-      <div class="pg5d4d2d1 flex-wrap gap-2">
-        <div class="cssd1bx1"></div>
-        <div class="cssd1bx2"></div>
-        <div class="cssd1bx3"></div>
+    <div class="cssbattle-section">
+      <div class="cssbattle-header">
+        <div>
+          <h3>CSS Battle</h3>
+          <div class="cssbattle-stats"><span>🏆 70+ targets</span><span>✅ 99.67% accuracy</span><span>📝 637 avg chars</span></div>
+        </div>
+        <a href="https://cssbattle.dev/player/kumar_1729" target="_blank" rel="noopener" class="btn-outline-sm">View Profile →</a>
       </div>
-      <div class="pg5d4d2d2 flex-wrap gap-2 mt-2">
-        <div class="cssd2bx4"></div>
-        <div class="cssd2bx5"></div>
-        <div class="cssd2bx6"></div>
-      </div>
-      <div class="m-3 mx-0 mt-3">
-        <p style="color:var(--text-muted);">&bull; Projects: 70+ &nbsp;|&nbsp; &bull; Accuracy: 99.67% &nbsp;|&nbsp; &bull; Avg characters: 637</p>
-        <a href="https://cssbattle.dev/player/kumar_1729" target="_blank" rel="noopener"
-          class="pg5d4d1d1a bold p-2 mt-2 d-inline-block">
-          <img src="./images/icons8-circle-64.png" alt="" class="star" />&nbsp;View Profile
-        </a>
+      <div class="cssbattle-grid">
+        <div class="csbx cssd1bx1"></div>
+        <div class="csbx cssd1bx2"></div>
+        <div class="csbx cssd1bx3"></div>
+        <div class="csbx cssd2bx4"></div>
+        <div class="csbx cssd2bx5"></div>
+        <div class="csbx cssd2bx6"></div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT SECTION -->
-  <section id="chat" class="pg6 d-flex">
-    <div class="pg6left d-flex px-5">
-      <div>
-        <div class="pg6leftfont fw-bold">Have a project<br />in mind?<br />Let's get to<br />work.</div>
-        <a href="#" popovertarget="pop-box" class="hello">
-          Say Hello
-          <img src="./images/icons8-arrow-100 (1).png" alt="" />
-        </a>
-      </div>
+  <!-- ═══════════════ CONTACT CTA ═══════════════ -->
+  <section id="contact" class="contact-cta dark-section">
+    <div class="cta-text">
+      <h2>Have a project in mind?<br /><span class="gradient-text">Let's get to work.</span></h2>
+      <p>I'm currently available for freelance projects. Let's create something great together.</p>
+      <a href="#" popovertarget="pop-box" class="btn-primary lg">
+        Say Hello <img src="./images/icons8-arrow-100 (1).png" alt="" class="btn-arrow" />
+      </a>
     </div>
-    <div class="pg6right"></div>
+    <div class="cta-img"></div>
   </section>
 
-  <!-- CONTACT POPUP -->
-  <div class="pop-box shadow-lg" id="pop-box" popover>
-    <button popovertarget="pop-box" id="close">
+  <!-- ═══════════════ CONTACT POPUP ═══════════════ -->
+  <div class="pop-box" id="pop-box" popover>
+    <button popovertarget="pop-box" id="close-popup" aria-label="Close">
       <img src="./images/icons8-close-96.png" alt="Close" />
     </button>
-    <div class="popxhed p-4 p-md-5 text-center"
-      style="background:var(--gradient-main);color:var(--text-light);border-top-left-radius:20px;border-top-right-radius:20px;">
-      <h2 class="fw-bold mb-2" style="font-size:32px;">Got Ideas? Let's team up.</h2>
-      <p class="mb-0" style="color:rgba(255,255,255,0.9);font-size:16px;">Tell us more about yourself and what you have in mind.</p>
+    <div class="popup-header">
+      <h2>Got Ideas? Let's team up.</h2>
+      <p>Tell us more about yourself and what you have in mind.</p>
     </div>
-    <div id="form-container" class="p-4">
+    <div class="popup-body" id="form-container">
       <form id="contact-form">
-        <div class="row g-3 mb-3">
-          <div class="col-md-6">
-            <input type="text" id="contact-name" name="name" placeholder="Full Name..."
-              class="form-control py-3" required />
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" id="contact-name" name="name" placeholder="Full Name *" class="form-control py-3" required />
           </div>
-          <div class="col-md-6">
-            <input type="email" id="contact-email" name="email" placeholder="Gmail Address..."
-              class="form-control py-3" required />
-            <div id="email-error" style="color:#dc3545;font-size:13px;margin-top:4px;display:none;">
-              &#9888; Invalid Email: Please provide a valid @gmail.com address.
-            </div>
+          <div class="form-group">
+            <input type="email" id="contact-email" name="email" placeholder="Gmail Address *" class="form-control py-3" required />
+            <div id="email-error" class="field-error">⚠️ Please enter a valid @gmail.com address.</div>
           </div>
         </div>
-        <div class="mb-3">
-          <textarea id="contact-message" name="message" placeholder="Your message..."
-            class="form-control py-3" rows="4" required></textarea>
+        <div class="form-group">
+          <textarea id="contact-message" name="message" placeholder="Your message *" class="form-control py-3" rows="4" required></textarea>
         </div>
-        <div class="text-end">
-          <button type="submit" id="submit-btn" class="hello" style="margin-top:0;border:none;">
-            Send Message
-            <img src="./images/icons8-arrow-100 (1).png" alt="" />
-          </button>
-        </div>
+        <button type="submit" id="submit-btn" class="btn-primary full-w">
+          Send Message <img src="./images/icons8-arrow-100 (1).png" alt="" class="btn-arrow" />
+        </button>
       </form>
-      <div id="success-msg" style="display:none;text-align:center;padding:30px 10px;">
-        <div style="font-size:60px;">&#127881;</div>
-        <h3 class="fw-bold mt-3" style="color:var(--primary);">Thank You!</h3>
-        <p style="color:var(--text-muted);margin-top:10px;line-height:1.7;">
-          Your message has been successfully sent to <b>Prem Kumar</b>.<br />
-          Feel free to close this window and continue browsing the portfolio!
+      <div id="success-msg" style="display:none; text-align:center; padding:30px 10px;">
+        <div style="font-size:56px;">🎉</div>
+        <h3 style="color:var(--primary); margin-top:12px;">Thank You!</h3>
+        <p style="color:var(--text-muted); margin-top:8px; line-height:1.7;">
+          Your message has been sent to <b>Prem Kumar</b>.<br />Feel free to close this and keep browsing!
         </p>
       </div>
     </div>
   </div>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="foter">
-      <div class="fotrd1">
-        <div class="phone">
-          <img src="./images/icons8-phone-501.png" alt="" style="height:40px;" />
-          <p style="margin-top:8px;color:var(--text-light-muted);">Mon-Fri from 8am to 5pm.</p>
-          <a href="tel:+917671811808" class="phone-a">+91 7671811808</a>
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-contacts">
+        <div class="fc-item">
+          <img src="./images/icons8-phone-501.png" alt="" />
+          <div><span>Mon–Fri, 8am to 5pm</span><a href="tel:+917671811808">+91 7671811808</a></div>
         </div>
-        <div class="email">
-          <img src="./images/icons8-email-501.png" alt="" style="height:40px;" />
-          <p style="margin-top:8px;color:var(--text-light-muted);">Our friendly team is here to help.</p>
-          <a href="mailto:prem123690@gmail.com" class="email-a">prem123690@gmail.com</a>
+        <div class="fc-item">
+          <img src="./images/icons8-email-501.png" alt="" />
+          <div><span>Reach us anytime</span><a href="mailto:prem123690@gmail.com">prem123690@gmail.com</a></div>
         </div>
-        <div class="location">
-          <img src="./images/icons8-location-501.png" alt="" style="height:40px;" />
-          <p style="margin-top:8px;color:var(--text-light-muted);">Come say hello at our office HQ.</p>
-          <p style="color:var(--text-light-muted);">Tirupati, Andhra Pradesh, India</p>
+        <div class="fc-item">
+          <img src="./images/icons8-location-501.png" alt="" />
+          <div><span>Based in</span><span>Tirupati, Andhra Pradesh, India</span></div>
         </div>
       </div>
-      <div class="fotrd2 text-center">
-        <p style="color:var(--text-light-muted);font-size:14px;">
-          &copy; Copyright 2025, All Rights Reserved. Developed by <b>Prem Kumar</b>
-        </p>
-      </div>
+      <div class="footer-copy">© 2025 Prem Kumar. All Rights Reserved.</div>
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jl64OSGJJoXIKjlxd4bQQAr9eRcq"
-    crossorigin="anonymous"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jl64OSGJJoXIKjlxd4bQQAr9eRcq" crossorigin="anonymous"></script>
   <script>
+    /* Contact Form */
     const contactForm = document.getElementById('contact-form');
     const successMsg  = document.getElementById('success-msg');
     const submitBtn   = document.getElementById('submit-btn');
@@ -402,69 +299,43 @@
     const emailError  = document.getElementById('email-error');
 
     if (contactForm) {
-      contactForm.addEventListener('submit', function (e) {
+      contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
-
-        const emailVal = emailInput.value.trim();
-        if (!emailVal.endsWith('@gmail.com')) {
-          emailError.style.display = 'block';
-          emailInput.focus();
-          return;
+        if (!emailInput.value.trim().endsWith('@gmail.com')) {
+          emailError.style.display = 'block'; emailInput.focus(); return;
         }
         emailError.style.display = 'none';
-
-        submitBtn.innerHTML = 'Sending... <img src="./images/icons8-arrow-100 (1).png" alt="">';
-        submitBtn.disabled = true;
-        submitBtn.style.opacity = '0.7';
-
-        const formData = new FormData(contactForm);
-        formData.append('access_key', '880a65fd-1f38-4312-9d8b-83e901b48de2');
-
-        fetch('https://api.web3forms.com/submit', { method: 'POST', body: formData })
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true; submitBtn.style.opacity = '0.7';
+        const fd = new FormData(contactForm);
+        fd.append('access_key', '880a65fd-1f38-4312-9d8b-83e901b48de2');
+        fetch('https://api.web3forms.com/submit', { method: 'POST', body: fd })
           .then(r => r.json())
-          .then(data => {
-            if (data.success) {
-              contactForm.style.display = 'none';
-              successMsg.style.display  = 'block';
-            } else {
-              alert('Something went wrong. Please try again.');
-              submitBtn.innerHTML = 'Send Message <img src="./images/icons8-arrow-100 (1).png" alt="">';
-              submitBtn.disabled  = false;
-              submitBtn.style.opacity = '1';
-            }
+          .then(d => {
+            if (d.success) { contactForm.style.display='none'; successMsg.style.display='block'; }
+            else { alert('Something went wrong.'); submitBtn.textContent='Send Message'; submitBtn.disabled=false; submitBtn.style.opacity='1'; }
           })
-          .catch(() => {
-            alert('Network error. Please check your connection and try again.');
-            submitBtn.innerHTML = 'Send Message <img src="./images/icons8-arrow-100 (1).png" alt="">';
-            submitBtn.disabled  = false;
-            submitBtn.style.opacity = '1';
-          });
+          .catch(() => { alert('Network error.'); submitBtn.textContent='Send Message'; submitBtn.disabled=false; submitBtn.style.opacity='1'; });
       });
-
-      emailInput.addEventListener('input', function () {
-        emailError.style.display =
-          (emailInput.value.trim() && !emailInput.value.trim().endsWith('@gmail.com'))
-            ? 'block' : 'none';
+      emailInput.addEventListener('input', () => {
+        emailError.style.display = (emailInput.value.trim() && !emailInput.value.trim().endsWith('@gmail.com')) ? 'block' : 'none';
       });
     }
 
-    /* ── Hamburger Menu ── */
+    /* Hamburger */
     const hamburger = document.getElementById('hamburger');
-    const navMenu   = document.getElementById('header_menu');
-    const navLinks  = document.querySelectorAll('.nav-link-item, #lets-chat-btn-mobile');
+    const navMenu   = document.getElementById('nav-menu');
+    hamburger.addEventListener('click', () => { hamburger.classList.toggle('open'); navMenu.classList.toggle('open'); });
+    document.querySelectorAll('.nav-link, #nav-chat-btn').forEach(l => l.addEventListener('click', () => { hamburger.classList.remove('open'); navMenu.classList.remove('open'); }));
 
-    hamburger.addEventListener('click', function () {
-      hamburger.classList.toggle('open');
-      navMenu.classList.toggle('mobile-open');
-    });
-
-    navLinks.forEach(function (link) {
-      link.addEventListener('click', function () {
-        hamburger.classList.remove('open');
-        navMenu.classList.remove('mobile-open');
-      });
-    });
+    /* Active nav on scroll */
+    const secs = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      let cur = '';
+      secs.forEach(s => { if (window.scrollY >= s.offsetTop - 120) cur = s.id; });
+      document.querySelectorAll('.nav-link').forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + cur));
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
   </script>
-
 </body>
 </html>
