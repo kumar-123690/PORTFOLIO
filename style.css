@@ -252,6 +252,127 @@ a { text-decoration: none !important; }
   transform: scale(1.05);
 }
 
+/* ── GitHub Project Cards ── */
+.gh-section { }
+
+.gh-profile-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid var(--text-light-muted);
+  padding: 5px 12px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.gh-profile-link:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  background: rgba(37,99,235,0.06);
+}
+
+.gh-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.gh-card {
+  background: var(--bg-white);
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  box-shadow: var(--shadow-sm);
+}
+.gh-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--secondary);
+}
+
+.gh-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.gh-card-icon {
+  font-size: 1.6rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.gh-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary) !important;
+  line-height: 1.4;
+  word-break: break-word;
+  transition: color 0.2s;
+}
+.gh-card-title:hover { color: var(--primary-hover) !important; }
+
+.gh-card-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  flex: 1;
+  margin: 0;
+}
+
+.gh-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.gh-lang {
+  font-size: 0.82rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.gh-lang.html   { color: #e34c26; }
+.gh-lang.python { color: #3572A5; }
+.gh-lang.js     { color: #f1e05a; }
+.gh-lang.css    { color: #563d7c; }
+
+.gh-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted) !important;
+  border: 1px solid #e2e8f0;
+  padding: 4px 12px;
+  border-radius: 20px;
+  transition: all 0.25s ease;
+}
+.gh-btn:hover {
+  background: var(--primary);
+  color: #fff !important;
+  border-color: var(--primary);
+}
+.gh-btn img { filter: invert(0.5); transition: filter 0.25s; }
+.gh-btn:hover img { filter: invert(1); }
+
+/* Responsive gh-grid */
+@media screen and (max-width: 768px) {
+  .gh-grid { grid-template-columns: 1fr; }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .gh-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
 .pg5d4d1d2img {
   height: 110vh;
   background: url(./images/project1.png) no-repeat center/cover;
